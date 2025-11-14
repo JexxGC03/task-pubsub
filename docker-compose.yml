@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: tasks-pubsub-app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+
+  redis:
+    image: redis:7-alpine
+    container_name: tasks-pubsub-redis
+    ports:
+      - "6379:6379"
