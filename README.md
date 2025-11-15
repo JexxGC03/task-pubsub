@@ -10,7 +10,7 @@
 
 ```bash
 # 1. Clonar el repositorio
-git clone <URL-DEL-REPO>
+git clone (https://github.com/JexxGC03/task-pubsub)
 cd tasks-pubsub-demo
 
 # 2. Construir y levantar app + Redis
